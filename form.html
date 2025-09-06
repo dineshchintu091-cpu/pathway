@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login & signup page</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</head>
+
+<header>
+
+        <h2 class="OHS">ONLINE HEALTH CARE</h2>
+        <!-- <nav class="navigation">
+           <a href="#">Home</a>
+           <a href="#">About</a>
+           <a href="#">Service</a>
+           <a href="#">Contact</a>
+           <a href="#">Help</a>
+        </nav> -->
+    </header>
+<body>
+       <div class="bg">
+           <div class="form-box"> 
+               <div class="button-box">
+                <div id="btn"></div>
+                  <button type="button" class="toggle-btn" onclick="login()">Log in</button>
+                      <button type="button" class="toggle-btn"onclick="Register()">Register</button>
+                      </div>
+
+        
+
+           <form id="login" class="input-group">
+            <div class="input-container">
+                <ion-icon name="person-circle-outline"></ion-icon>
+            <input type="text" class="input-field"placeholder="User Id"required>
+            </div>
+       
+
+            <div class="input-container">
+                <ion-icon name="lock-closed-outline"></ion-icon>
+            <input type="password" class="input-field" placeholder="Enter Password"required>
+            </div>
+
+            <input type="checkbox" class="check-box"><span>Remember Password</span>
+            <button type="submit"  class="submit-btn">Log in</button>
+           </form>
+
+           <form id="Register" class="input-group">
+            <div class="input-container">
+                <ion-icon name="people-outline"></ion-icon>
+            <input type="text" class="input-field" placeholder="Enter your User Id"required>
+            </div>
+
+            <div class="input-container">
+                <ion-icon name="eye-off-outline"></ion-icon>
+            <input type="password" class="input-field"placeholder="Enter your password"required contains="special characters">
+            </div>
+
+             <div class="input-set">
+            <div class="input-one">
+                <ion-icon name="mail-outline"></ion-icon>
+
+                </div>
+            <div class="input-two">
+                <ion-icon name="call-outline"></ion-icon>
+                </div>
+            <input type="email & phone number" class="input-field" placeholder="Enter your email or phone number"required>
+           </div>
+            <input type="checkbox" class="check-box"><span>I Agree to Terms & Conditions</span>
+            <button type="submit"  class="submit-btn">Register</button>
+           </form>
+    </div>
+
+       </div> 
+
+        <script>
+            
+             var x = document.getElementById('login');
+             var y = document.getElementById('Register');
+             var z = document.getElementById('btn');
+
+             function Register(){ 
+             x.style.left="-400px";
+             y.style.left="50px";
+             z.style.left="110px";   
+
+          }
+
+             function login(){
+             x.style.left="50px";
+             y.style.left="450px";
+             z.style.left="0";
+          }   
+
+      </script>  
+</body>
+</html>
